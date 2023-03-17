@@ -1,0 +1,20 @@
+input[id=cb]:checked~p.strikethrough {
+  text-decoration: line-through;
+  color: red;
+}
+
+div{
+  margin-left: 14%;
+  font-family: 'Montserrat', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: black;
+}
+
+h3{
+  margin-top: 8px;
+  margin-left: 3px;
+
+}

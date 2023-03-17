@@ -1,0 +1,16 @@
+
+
+
+<!--<ng-container *ngFor="let singleObj of someFunc(); let i = index;">-->
+<!--  <app-alldatachild [obj]="singleObj"></app-alldatachild>-->
+<!--</ng-container>-->
+
+
+<div class="mt-2 d-flex" *ngFor="let obj of someFunc()" >
+  <input  type="checkbox" [checked]="obj.check" [value]="obj.id" (change)="toggle($event, obj)" style="zoom:1.8"> <h3><del *ngIf="obj.check">{{obj.detail}}</del></h3>
+  <h3 *ngIf="!obj.check">{{obj.detail}}</h3>
+</div>
+
+
+<!--{{objArr[3].check}}-->
+

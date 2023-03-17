@@ -1,0 +1,7 @@
+
+
+<ng-container *ngFor="let obj of getArray()" >
+  <div class="d-flex"><input type="checkbox"  [checked]="obj.check" (change)="checking(obj)" style="zoom: 1.8"><h3 class="mt-2">
+  {{obj.detail}}
+</h3></div>
+</ng-container>

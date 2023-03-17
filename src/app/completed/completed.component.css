@@ -1,0 +1,30 @@
+
+#delete{
+  color: white;
+
+
+}
+
+#del{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-left: 80%;
+  border: 2px solid red;
+  color: White;
+  border-radius: 20px;
+  padding: 7px 14px;
+
+}
+
+h3{
+  margin-top: 2%;
+  margin-left: 15.5%;
+}
+
+#indelete{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20%;
+  color: red;
+}

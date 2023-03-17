@@ -1,0 +1,18 @@
+<!--<ng-container *ngIf="varState">-->
+<!--<ng-container *ngFor="let singleObj of someFunc(); let i = index;" >-->
+<!--  <app-alldatachild class="lis" *ngIf="singleObj.check" [obj]="singleObj"></app-alldatachild>-->
+<!--</ng-container>-->
+
+<ng-container>
+  <h3 class="mt-2" *ngFor="let obj of competedFunc()">
+    <div *ngIf="obj.check">
+      <div id="detail"><input  type="checkbox"  [checked]="obj.check" (change)="togg(obj)" style="zoom: 1.5"> {{obj.detail}}</div>
+      <a href=# (click)="individualDelete(obj)"><i class="material-icons" id="indelete">delete</i></a>
+    </div>
+  </h3>
+
+<button id="del" class="btn btn-danger" (click)="changeState()" *ngIf="returnService.completedArr.length">
+  Delete All<i id="delete" class="material-icons" >delete</i>
+</button>
+</ng-container>
+

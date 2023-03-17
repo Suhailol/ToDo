@@ -1,0 +1,4 @@
+<div align="center" class="inp mt-4" *ngIf="!returnService.inCompleted">
+  <input class="input1 p-3" placeholder="add details" [(ngModel)]="enteredDetail" id="inpu" (keydown.enter)="func(enteredDetail)">
+  <button class="bg-primary text-white btn-outline-primary ml-1" (click)="func(enteredDetail)">Add</button>
+</div>
